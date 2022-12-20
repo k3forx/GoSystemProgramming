@@ -58,6 +58,9 @@ func main() {
 
 	fmt.Println("-----------------------------------")
 	multiReader()
+
+	fmt.Println("-----------------------------------")
+	teeReader()
 }
 
 func fileInputOutput() {
@@ -155,4 +158,14 @@ func multiReader() {
 	reader := io.MultiReader(header, content, footer)
 	// すべてのreaderをつなげた出力が表示
 	io.Copy(os.Stdout, reader)
+}
+
+func teeReader() {
+	var buffer bytes.Buffer
+	reader := bytes.NewBufferString("Example of io.TeeReader\n")
+	teeReader := io.TeeReader(reader, &buffer)
+	// データを読み捨てる
+	_, _ = io.ReadAll(teeReader)
+	// バッファには残っている
+	fmt.Println(buffer.String())
 }
