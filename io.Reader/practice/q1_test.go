@@ -13,6 +13,7 @@ func TestCopyFile(t *testing.T) {
 	setup(t)
 
 	practice.CopyFile()
+
 	file, err := os.Open("new.txt")
 	if err != nil {
 		t.Error(err)
@@ -23,7 +24,7 @@ func TestCopyFile(t *testing.T) {
 		t.Error(err)
 		return
 	}
-	expected := ""
+	expected := "this is content of old.txt"
 	if string(buf) != expected {
 		t.Errorf("content is expected as %s, but got %s", expected, string(buf))
 	}
