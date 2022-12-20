@@ -1,4 +1,4 @@
-package practice
+package q2
 
 import (
 	"crypto/rand"

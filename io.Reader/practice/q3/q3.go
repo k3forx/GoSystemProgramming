@@ -1,4 +1,4 @@
-package practice
+package q3
 
 import (
 	"archive/zip"

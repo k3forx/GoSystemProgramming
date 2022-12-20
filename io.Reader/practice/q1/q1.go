@@ -1,4 +1,4 @@
-package practice
+package q1
 
 import (
 	"io"

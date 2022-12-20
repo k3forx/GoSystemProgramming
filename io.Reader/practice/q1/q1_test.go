@@ -1,4 +1,4 @@
-package practice_test
+package q1_test
 
 import (
 	"bytes"
@@ -8,13 +8,13 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/k3forx/GoSystemProgramming/ioReader/practice"
+	"github.com/k3forx/GoSystemProgramming/ioReader/practice/q1"
 )
 
 func TestCopyFile(t *testing.T) {
 	setup(t)
 
-	if err := practice.CopyFile(); err != nil {
+	if err := q1.CopyFile(); err != nil {
 		t.Errorf("err should be nil, but got %+v\n", err)
 	}
 

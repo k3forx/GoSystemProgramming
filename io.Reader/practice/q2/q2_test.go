@@ -1,16 +1,16 @@
-package practice_test
+package q2_test
 
 import (
 	"os"
 	"testing"
 
-	"github.com/k3forx/GoSystemProgramming/ioReader/practice"
+	"github.com/k3forx/GoSystemProgramming/ioReader/practice/q2"
 )
 
 func TestCreateRandFile(t *testing.T) {
 	const fileName string = "rand.txt"
 
-	if err := practice.CreateRandFile(fileName); err != nil {
+	if err := q2.CreateRandFile(fileName); err != nil {
 		t.Errorf("err should be nil, but got %+v\n", err)
 		return
 	}
