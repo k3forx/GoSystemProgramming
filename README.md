@@ -14,6 +14,14 @@ https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%82%A2%E3%8
 
 https://qiita.com/spc_ehara/items/c748ec636283df805926#:~:text=png%E3%81%AB%E3%81%AF%E6%A7%98%E3%80%85%E3%81%AA,IDAT%E3%83%81%E3%83%A3%E3%83%B3%E3%82%AF%E3%80%81IEND%E3%83%81%E3%83%A3%E3%83%B3%E3%82%AF%E3%81%A7%E3%81%99%E3%80%82
 
+### `io.Reader` / `io.Writer` でストリームを自由に操る
+
+データの流れを自由に制御するために使える構造体
+
+- `io.MultiReader`
+- `io.TeeReader`
+- `io.Pipe` (`io.PipeReader` と `io.PipeWriter`)
+
 ## 低レベルアクセスへの入り口 3: チャネル
 
 ## システムコール
