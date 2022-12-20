@@ -1,3 +1,4 @@
-package practice
+package q4
 
-func DownLoadZip() {}
+func DownloadZipViaHTTPRequest() {
+}
