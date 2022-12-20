@@ -5,16 +5,22 @@ import (
 	"os"
 )
 
-func CopyFile() {
+func CopyFile() error {
 	old, err := os.Open("old.txt")
 	if err != nil {
-		panic(err)
+		return err
 	}
 	defer old.Close()
-	new, err := os.Open("new.txt")
+
+	new, err := os.Create("new.txt")
 	if err != nil {
-		panic(err)
+		return err
 	}
 	defer new.Close()
-	io.Copy(new, old)
+
+	if _, err := io.Copy(new, old); err != nil {
+		return err
+	}
+
+	return nil
 }
