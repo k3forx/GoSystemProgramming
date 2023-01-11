@@ -37,3 +37,7 @@ https://qiita.com/spc_ehara/items/c748ec636283df805926#:~:text=png%E3%81%AB%E3%8
 ## システムコール
 
 ##
+
+## ファイルシステムの最新部を扱う Go 言語の関数
+
+- POSIX 系の OS の場合、 `syscall.Flock()` というシステムコールが利用できる
