@@ -14,8 +14,8 @@ func main() {
 	sigctx, cancel := signal.NotifyContext(ctx, syscall.SIGINT, syscall.SIGTERM)
 	defer cancel()
 
-	toctx, cancel := context.WithTimeout(ctx, 5*time.Second)
-	defer cancel()
+	toctx, cancel2 := context.WithTimeout(ctx, 5*time.Second)
+	defer cancel2()
 
 	select {
 	case <-sigctx.Done():
