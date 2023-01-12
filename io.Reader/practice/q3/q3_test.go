@@ -3,7 +3,7 @@ package q3_test
 import (
 	"testing"
 
-	"github.com/k3forx/GoSystemProgramming/ioReader/practice/q3"
+	"github.com/k3forx/GoSystemProgramming/io.Reader/practice/q3"
 )
 
 func TestCreateZipWithStringsReader(t *testing.T) {

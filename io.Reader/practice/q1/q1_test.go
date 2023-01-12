@@ -8,7 +8,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/k3forx/GoSystemProgramming/ioReader/practice/q1"
+	"github.com/k3forx/GoSystemProgramming/io.Reader/practice/q1"
 )
 
 func TestCopyFile(t *testing.T) {

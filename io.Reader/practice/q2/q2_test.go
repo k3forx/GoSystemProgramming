@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/k3forx/GoSystemProgramming/ioReader/practice/q2"
+	"github.com/k3forx/GoSystemProgramming/io.Reader/practice/q2"
 )
 
 func TestCreateRandFile(t *testing.T) {

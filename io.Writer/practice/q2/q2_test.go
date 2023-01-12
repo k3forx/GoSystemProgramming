@@ -3,7 +3,7 @@ package q2_test
 import (
 	"testing"
 
-	"github.com/k3forx/GoSystemProgramming/ioWriter/practice/q2"
+	"github.com/k3forx/GoSystemProgramming/io.Writer/practice/q2"
 )
 
 func TestCreateCSV(t *testing.T) {
